@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><h2 class="logo">Indanasufya</h2></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Kembali</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="user-box">
+                    <label>Username</label>
+                    <input type="text" id="username" autocomplete="off">
+                </div>
+                <div class="pass-box">
+                    <label>Password</label>
+                    <input type="password" id="password" autocomplete="off">
+                </div>
+                <div class="button-form">
+                    <button type="button" class="submit" onclick="login()">LOGIN</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        function login(){
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            var error = document.querySelector (".ini-salah");
+
+            if (user == "Indn" && pass =="380105"){
+                window.location.href="beranda.html";
+            }else{
+                error.style.display ="inline-block";
+            }
+        }
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

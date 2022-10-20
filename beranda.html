@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="kontak.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><h2 class="logo">Indanasufya</h2></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Hi Gais Welcome!</h1>
+            <p>Saya Indanasufya</p>
+        </div>
+    </section>
+    <section class="kontak">
+        <div class="contactUs">
+            <div class="title">
+                <h2>Hubungi Saya</h2>
+            </div>
+            <div class="box">
+                <div class="contact form">
+                    <h3>Kirim Pesan</h3>
+                    <form>
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Nama Depan</span>
+                                    <input type="text" placeholder="Nama Depan">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Nama Belakang</span>
+                                    <input type="text" placeholder="Nama Belakang">
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input type="text" placeholder="nameaddress@gmail.com">
+                                </div>
+                                <div class="inputBox">
+                                    <span>No HP</span>
+                                    <input type="text" placeholder="Nomor Hp">
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>Pesan</span>
+                                    <textarea placeholder="Tulis pesanmu disini.."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input onclick="alarm()" type="submit" value="Kirim">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact info">
+                    <h3>Info Kontak</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>Kota Makassar, Sulawesi Selatan<br>INDONESIA</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="https://wa.me/+628125559424">+62-812-5559-424</a>
+                        </div>
+                        <ul class="sci">
+                            <li><a href="https://www.instagram.com/indnsfyyyy_"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

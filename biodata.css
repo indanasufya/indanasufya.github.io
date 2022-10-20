@@ -1,0 +1,127 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 126, 238);
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 27);
+}
+
+nav a{
+    cursor: pointer;
+    text-decoration: none;
+}
+nav a .logo{
+    color: rgb(78, 220, 255);
+}
+nav a .logo:hover{
+    color: rgb(58, 129, 223);
+    transition: 0.5s;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.nav-links ul li a:hover{
+    color: rgb(0, 132, 255);
+    transition: 0.5s;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 45, 220);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(28, 240, 255);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav .fa:hover{
+        color: rgb(255, 159, 247);
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+.container{
+    margin: 20px;
+    padding: 20px;
+    margin-left: 340px;
+    margin-top: 120px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.container h1{
+    font-size: 45px;
+}
+.container hr{
+    margin-bottom: 10px;
+}
+
+@media(max-width: 700px){
+    body{
+        background-color: rgb(255, 160, 239);
+    }
+
+    .container{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 80px;
+    }
+}

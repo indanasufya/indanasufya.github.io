@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><h2 class="logo">Indanasufya</h2></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="card">
+            <div class="card-image">
+              <img src="2f045aff-40d0-4e2e-a5b4-d8db0e65ebc7.jpeg" alt="">
+            </div>
+            <div class="profile-image">
+              <img src="Screenshot_2022-10-18-17-53-55-55_99c04817c0de5652397fc8b56c3b3817.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <h3>Indanasufya</h3>
+              <p>Nama panggilan saya inda/indana, lahir di Makassar,01 Desember 2003. Saya anak ketiga dari 3 bersaudara, cita-cita saya menjadi Polwan dan hobi saya itu baca wattpad dan tidur</p>
+            </div>
+            <div class="icons">
+              <a href="https://www.instagram.com/indnsfyyyy_" class="fab fa-instagram"></a>
+              <a href="https://wa.me/+6281255596424" class="fab fa-whatsapp"></a>
+            </div>
+          </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
